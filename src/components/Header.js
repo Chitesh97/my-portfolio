@@ -1,35 +1,29 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faLinkedin,
-  faMedium,
-  faStackOverflow,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
   {
-    icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    icon: faLinkedin,
+    url: "www.linkedin.com/in/cg97",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/Chitesh97",
   },
   {
-    icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    icon: faEnvelope,
+    url: "mailto:dv.chitesh97@gmail.com",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+    icon: faPhone,
+    url: "tel:+917589005569",
+  }
 ];
 
 const Header = () => {
@@ -55,6 +49,7 @@ const Header = () => {
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
+      css={{ zIndex: '10'}}
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
