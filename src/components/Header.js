@@ -1,7 +1,10 @@
 import React from "react";
-import { Box, HStack, Text } from "@chakra-ui/react";
+import { Box, HStack, Text, Button } from "@chakra-ui/react";
+import { useColorMode } from "@chakra-ui/react";
 
 const Header = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -34,13 +37,15 @@ const Header = () => {
           justifyContent="right"
           alignItems="center"
         >
-          <Text>Color Theme switch </Text>
           <nav>
             <HStack spacing={8}>
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
               <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
             </HStack>
           </nav>
+          <Button onClick={toggleColorMode}>
+            Toggle {colorMode === 'light' ? 'dark' : 'light'}
+          </Button>
         </HStack>
       </Box>
     </Box>
