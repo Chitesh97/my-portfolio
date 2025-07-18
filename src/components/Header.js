@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, HStack, Text, Button } from "@chakra-ui/react";
+import { Box, HStack, Button } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 
 const Header = () => {
@@ -29,7 +29,7 @@ const Header = () => {
       backgroundColor="transparent"
       css={{ zIndex: '10'}}
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
+      <Box maxWidth="1280px" margin="0 auto">
         <HStack
           px={16}
           py={4}
