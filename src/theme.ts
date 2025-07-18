@@ -1,16 +1,20 @@
-import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
+import { color, extendTheme, type ThemeConfig } from '@chakra-ui/react';
 
 export const theme: ThemeConfig = extendTheme({
   initialColorMode: 'dark',
   useSystemColorMode: true,
+  defaultProps: {
+    colorScheme: 'green',
+  },
   fonts: {
     heading: `'Montserrat', serif`,
     body: `'Montserrat', serif`,
   },
-  colors: {
-    chakra: {
+  styles: {
+    global: {
       body: {
-        bg: 'red.100',
+        bg: '#F9FAFB',
+        color: '#1A202C',
       }
     }
   }
