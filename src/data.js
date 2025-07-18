@@ -5,7 +5,7 @@ import {
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
-export default const socials = [
+export const socials = [
   {
     icon: faLinkedin,
     url: "www.linkedin.com/in/cg97",

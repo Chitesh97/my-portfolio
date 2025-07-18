@@ -12,8 +12,8 @@ const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
-    backgroundColor="#84c1ff"
-    color="#FFF"
+    backgroundColor="#F9FAFB"
+    color="#1A202C"
     px={8}
   >
     <VStack spacing={16}>
