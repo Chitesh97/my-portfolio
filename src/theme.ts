@@ -3,9 +3,6 @@ import { color, extendTheme, withDefaultSize, type ThemeConfig } from '@chakra-u
 export const theme: ThemeConfig = extendTheme({
   initialColorMode: 'dark',
   useSystemColorMode: true,
-  defaultProps: {
-    colorScheme: 'green',
-  },
   fonts: {
     heading: `'Montserrat', serif`,
     body: `'Montserrat', serif`,

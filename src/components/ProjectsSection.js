@@ -33,7 +33,6 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      isDarkBackground
       p={8}
       alignItems="flex-start"
       spacing={8}
