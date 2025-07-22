@@ -41,9 +41,9 @@ const LandingSection = () => {
   });
 
   useEffect(() => {
-    if(response) {
+    if (response) {
       onOpen(response.type, response.message);
-      if(response.type === 'success') formik.resetForm();
+      if (response.type === 'success') formik.resetForm();
     }
   }, [response]);
 
@@ -51,7 +51,7 @@ const LandingSection = () => {
     <FullScreenSection
       py={16}
       spacing={8}
-    w="100%">
+      w="100%">
       <VStack w="100%" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact me
