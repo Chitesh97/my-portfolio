@@ -9,11 +9,11 @@ export const theme: ThemeConfig = extendTheme({
   },
   semanticTokens: {
     colors: {
-      "primary.text" : {
+      "primary.text": {
         default: "#1A202C",
         _dark: "#F9FAFB",
       },
-      "primary.background" : {
+      "primary.background": {
         default: "#F9FAFB",
         _dark: "#1A202C",
       }
@@ -56,23 +56,12 @@ export const theme: ThemeConfig = extendTheme({
         }
       }
     },
-     Input: {
+    Input: {
       baseStyle: {
         field: {
           color: "primary.text",
         }
       }
     },
-     TextArea: {
-      variants: {
-        outline: {
-          color: "primary.text",
-        }
-      },
-      defaultProps: {
-        variant: "outline",
-      }
-    }
   }
-
 });

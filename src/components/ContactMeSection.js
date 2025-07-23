@@ -99,6 +99,7 @@ const LandingSection = () => {
                   id="comment"
                   name="comment"
                   height={250}
+                  color="primary.text"
                   {...formik.getFieldProps("comment")}
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
