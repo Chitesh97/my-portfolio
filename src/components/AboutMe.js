@@ -11,7 +11,8 @@ const AboutMe = () => {
       alignItems="center"
       display="flex"
       flexDir="column"
-      pb={16}>
+      pb={32}
+      px={8}>
       <Heading
         as="h2"
         color="purple.500"
@@ -23,11 +24,13 @@ const AboutMe = () => {
       <VStack
         spacing={4}
         maxWidth="1080px"
-        fontWeight="medium" >
+        fontWeight="medium"
+        alignItems="flex-start" >
         <Text>
           <Highlight
             query={aboutMeText.highlightsIntro1}
-            styles={{ fontWeight: "bold" }} >
+            styles={{ fontWeight: "bold", textAlign: "center" }}
+            >
             {aboutMeText.intro1}
           </Highlight>
         </Text>
@@ -61,7 +64,6 @@ const AboutMe = () => {
               }} />
             Key highlights
           </Heading>
-
           <List
             as="ol"
             styleType="disc"

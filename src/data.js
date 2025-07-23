@@ -49,3 +49,66 @@ export const aboutMeText = {
     "Thrive in agile environments with strong ownership and problem-solving attitude."
   ],
 }
+
+export const TechStackStrip = {
+  0: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    text: 'ReactJS',
+  },
+  1: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    text: 'JavaScript',
+  },
+  2: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    text: 'TypeScript',
+  },
+  3: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    text: 'HTML5',
+  },
+  4: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    text: 'CSS3',
+  },
+  5: {
+  imgUrl: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/chakra-colored.svg",
+  text: "Chakra UI",
+},
+6: {
+  imgUrl: "https://formik.org/images/formik-og.png",
+  text: "Formik",
+},
+7: {
+  imgUrl: "Yup (Validation Library)",
+  text: "Yup",
+},
+  8: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    text: 'Git',
+  },
+  9: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+    text: 'GitHub',
+  },
+  10: {
+    imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg',
+    text: 'Figma',
+  },
+  11: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
+    text: 'Jest',
+  },
+  12: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    text: 'Node.js',
+  },
+  13: {
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg',
+    text: 'npm',
+  },
+  14: {
+    imgUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    text: "Vercel"
+  }
+};
