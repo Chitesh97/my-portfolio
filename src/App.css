@@ -1,3 +1,11 @@
+html,
 body {
-  background: #1A202C;
+  color: #000;
+  background: #fff;
+}
+
+[data-theme='dark'],
+[data-theme='dark'] body {
+  color: #fff;
+  background: #000;
 }

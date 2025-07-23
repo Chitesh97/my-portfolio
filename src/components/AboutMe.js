@@ -29,7 +29,7 @@ const AboutMe = () => {
         <Text>
           <Highlight
             query={aboutMeText.highlightsIntro1}
-            styles={{ fontWeight: "bold", textAlign: "center" }}
+            styles={{ fontWeight: "bold", color: "primary.text", }}
             >
             {aboutMeText.intro1}
           </Highlight>
@@ -37,7 +37,7 @@ const AboutMe = () => {
         <Text>
           <Highlight
             query={aboutMeText.highlightsIntro2}
-            styles={{ fontWeight: "bold" }} >
+            styles={{ fontWeight: "bold", color: "primary.text" }} >
             {aboutMeText.intro2}
           </Highlight>
         </Text>

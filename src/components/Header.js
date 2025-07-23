@@ -5,6 +5,9 @@ import { useColorMode } from "@chakra-ui/react";
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const bg = useColorMode("gray.50", "gray.900");
+  const textColor = useColorMode("gray.800", "gray.100");
+  
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);

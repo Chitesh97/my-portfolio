@@ -53,7 +53,7 @@ const LandingSection = () => {
       spacing={8}
       w="100%">
       <VStack w="100%" p={32} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
+        <Heading as="h2" id="contactme-section">
           Contact me
         </Heading>
         <Box p={6} rounded="md" w="100%">
@@ -76,7 +76,7 @@ const LandingSection = () => {
                   type="email"
                   {...formik.getFieldProps("email")}
                 />
-                <FormHelperText color="white">We'll never share your email.</FormHelperText>
+                <FormHelperText>We'll never share your email.</FormHelperText>
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
               <FormControl>
