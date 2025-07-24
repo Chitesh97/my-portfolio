@@ -28,13 +28,22 @@ export default function TechStack() {
             key={index}
             px={16}
             alignItems="center"
-            >
-            <Image
-              src={item.imgUrl}
-              alt={item.text}
+            display="flex"
+            justifyContent="center"
+            flexDir="column"
+          >
+            <Box
               htmlWidth="60px"
               htmlHeight="60px"
-              aspectRatio="1" />
+              minHeight="60px"
+              maxHeight="60px"
+            >
+              <Image
+                src={item.imgUrl}
+                alt={item.text}
+                height="60px"
+              />
+            </Box>
             <Text
               textStyle="lg"
               fontWeight="medium"
