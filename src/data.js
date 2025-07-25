@@ -65,17 +65,17 @@ export const TechStackStrip = {
     text: 'CSS3',
   },
   5: {
-  imgUrl: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/chakra-colored.svg",
-  text: "Chakra UI",
-},
-6: {
-  imgUrl: "https://formik.org/images/formik-og.png",
-  text: "Formik",
-},
-7: {
-  imgUrl: "https://ogp.me/logo.png",
-  text: "Open Graph Protocol",
-},
+    imgUrl: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/chakra-colored.svg",
+    text: "Chakra UI",
+  },
+  6: {
+    imgUrl: "https://formik.org/images/formik-og.png",
+    text: "Formik",
+  },
+  7: {
+    imgUrl: "https://ogp.me/logo.png",
+    text: "Open Graph Protocol",
+  },
   8: {
     imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
     text: 'Git',
@@ -105,11 +105,11 @@ export const TechStackStrip = {
     text: "Vercel"
   },
   15: {
-  imgUrl: "https://static.thenounproject.com/png/4682113-512.png",
-  text: "Accessibility",
-},
-16: {
-  imgUrl: "/images/Pega.png",
-  text: "Pega",
-},
+    imgUrl: "https://static.thenounproject.com/png/4682113-512.png",
+    text: "Accessibility",
+  },
+  16: {
+    imgUrl: "/images/Pega.png",
+    text: "Pega",
+  },
 };
