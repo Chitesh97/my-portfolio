@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { Heading, VStack, HStack, Icon, IconButton, useColorModeValue } from "@chakra-ui/react";
+import { Heading, VStack, HStack, Icon, IconButton, useColorModeValue, Button } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { socials } from "../data";
 
@@ -81,6 +81,11 @@ const LandingSection = () => {
                 transition="all 0.2s ease-in-out" />)
           })}
         </HStack>
+        <Button asChild>
+          <a
+          href="https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
+          size="xl">Download resume</a>
+        </Button>
       </VStack>
     </FullScreenSection>
   )
