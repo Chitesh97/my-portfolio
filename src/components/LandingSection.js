@@ -81,20 +81,25 @@ const LandingSection = () => {
                 transition="all 0.2s ease-in-out" />)
           })}
         </HStack>
-        <Button asChild
-          size="xl"
+        <Button
+          as="a"
+          href="https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
+          size="lg"
           variant="solid"
           rounded="full"
-          colorPalette="red">
+          bg="#7F00FF"  // neon purple base
+          color="white"
+          boxShadow="0 0 12px #7F00FF"
+          _hover={{
+            boxShadow: "0 0 20px #7F00FF, 0 0 30px #E100FF",
+            transform: "scale(1.05)",
+          }}
+          transition="all 0.2s ease-in-out"
+          download>
           <a href="https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO">
             Download resume
           </a>
         </Button>
-        <Button
-          size="lg"
-          variant="solid"
-          rounded="full"
-          colorScheme="red">Download resume</Button>
       </VStack>
     </FullScreenSection>
   )
