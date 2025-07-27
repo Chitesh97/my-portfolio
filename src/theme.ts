@@ -63,5 +63,14 @@ export const theme: ThemeConfig = extendTheme({
         }
       }
     },
+    Button: {
+      sizes: {
+        // xl: {
+        //   h: "56px",
+        //   fontSize: "lg",
+        //   px: "32px"
+        // }
+      }
+    },
   }
 });
