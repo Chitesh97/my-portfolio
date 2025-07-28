@@ -12,106 +12,44 @@ import {
   Select,
   Textarea,
   VStack,
+  HStack
 } from "@chakra-ui/react";
 import * as Yup from 'yup';
 import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
+import ContactMeSocials from "./ContactMeSocials";
+import ContactMeForm from "./ContactMeForm";
 
 const LandingSection = () => {
-  const { isLoading, response, submit } = useSubmit();
-  const { onOpen } = useAlertContext();
-
-  const formik = useFormik({
-    initialValues: {
-      firstName: "",
-      email: "",
-      type: "hireMe",
-      comment: ""
-    },
-    onSubmit: (values) => {
-      console.log(values);
-      submit("", values);
-    },
-    validationSchema: Yup.object({
-      firstName: Yup.string().required("Required"),
-      email: Yup.string().email("Please enter a valid email address").required("Required"),
-      comment: Yup.string().min(25, "Please enter at least 25 characters").required("Required")
-    }),
-  });
-
-  useEffect(() => {
-    if (response) {
-      onOpen(response.type, response.message);
-      if (response.type === 'success') formik.resetForm();
-    }
-  }, [response]);
 
   return (
-    <FullScreenSection
-      py={16}
-      spacing={8}
-      w="100%">
-      <VStack w="100%" p={32} alignItems="flex-start">
-        <Heading as="h2" id="contactme-section">
+    <Box
+      pt={16}
+      pb={64}
+      px={8}
+      display="flex"
+      justifyContent="center">
+      <VStack w="100%" maxWidth="768px">
+        <Heading
+          as="h2"
+          color="purple.500"
+          size="2xl"
+          lineHeight={2}
+          pb="8"
+        >
           Contact me
         </Heading>
-        <Box p={6} rounded="md" w="100%">
-          <form onSubmit={formik.handleSubmit}>
-            <VStack spacing={4}>
-              <FormControl isInvalid={formik.errors.firstName && formik.touched.firstName}>
-                <FormLabel htmlFor="firstName">Name</FormLabel>
-                <Input
-                  id="firstName"
-                  name="firstName"
-                  {...formik.getFieldProps("firstName")}
-                />
-                <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
-              </FormControl>
-              <FormControl isInvalid={formik.errors.email && formik.touched.email}>
-                <FormLabel htmlFor="email">Email Address</FormLabel>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  {...formik.getFieldProps("email")}
-                />
-                <FormHelperText>We'll never share your email.</FormHelperText>
-                <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
-              </FormControl>
-              <FormControl>
-                <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select
-                  id="type"
-                  name="type"
-                  {...formik.getFieldProps("type")}
-                >
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
-                    Open source consultancy session
-                  </option>
-                  <option value="other">Other</option>
-                </Select>
-              </FormControl>
-              <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
-                <FormLabel htmlFor="comment">Your message</FormLabel>
-                <Textarea
-                  id="comment"
-                  name="comment"
-                  height={250}
-                  color="primary.text"
-                  {...formik.getFieldProps("comment")}
-                />
-                <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
-              </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
-                Submit
-              </Button>
-            </VStack>
-          </form>
+        <Box
+          width="100%"
+          display={{ md: "flex" }}
+          justifyContent="space-between"
+          alignItems="stretch">
+          <ContactMeSocials />
+          <ContactMeForm />
         </Box>
       </VStack>
-    </FullScreenSection>
+    </Box>
   );
 };
 

@@ -11,21 +11,25 @@ export const socials = [
   {
     icon: LuLinkedin,
     url: "https://www.linkedin.com/in/cg97",
+    displayUrl: "linkedin.com/cg97",
     label: "LinkedIn",
   },
   {
     icon: LuGithub,
     url: "https://github.com/Chitesh97",
+    displayUrl: "github.com/Chitesh97",
     label: "GitHub",
   },
   {
     icon: FaRegEnvelope,
     url: "mailto:dv.chitesh97@gmail.com",
+    displayUrl: "dv.chitesh97@gmail.com",
     label: "Email",
   },
   {
     icon: LuPhoneCall,
     url: "tel:+917589005569",
+    displayUrl: "+91-7589005569",
     label: "Phone",
   },
 ];
