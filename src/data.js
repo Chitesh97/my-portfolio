@@ -1,6 +1,12 @@
 import { FaRegEnvelope } from "react-icons/fa";
 import { LuGithub, LuLinkedin, LuPhoneCall } from "react-icons/lu";
 
+export const personalDetails = {
+  heading: "Chitesh Goyal",
+  subHeading: "Translating business needs into pixel-perfect, user-first web apps",
+  onlineResumeLink: "https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
+};
+
 export const socials = [
   {
     icon: LuLinkedin,

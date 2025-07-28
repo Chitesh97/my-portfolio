@@ -1,10 +1,7 @@
 import React from "react";
 import { Heading, VStack, HStack, Icon, IconButton, useColorModeValue, Button } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import { socials } from "../data";
-
-const heading = "Chitesh Goyal";
-const subHeading = "Translating business needs into pixel-perfect, user-first web apps";
+import { socials, personalDetails } from "../data";
 
 const LandingSection = () => {
   const linkedInColor = useColorModeValue("#0077B5", "#0A66C2");
@@ -50,7 +47,7 @@ const LandingSection = () => {
           bgGradient="linear(to-r, blue.500, purple.500)"
           lineHeight="1.1"
           bgClip="text">
-          {heading}
+          {personalDetails.heading}
         </Heading>
         <Heading
           as="h3"
@@ -58,7 +55,7 @@ const LandingSection = () => {
           textAlign="center"
           lineHeight="1"
           fontWeight="medium">
-          {subHeading}
+          {personalDetails.subHeading}
         </Heading>
         <HStack spacing={12} py={4}>
           {socials.map(({ icon, url, label }) => {
@@ -83,7 +80,7 @@ const LandingSection = () => {
         </HStack>
         <Button
           as="a"
-          href="https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
+          href={personalDetails.onlineResumeLink}
           size="lg"
           variant="solid"
           rounded="full"
@@ -96,9 +93,7 @@ const LandingSection = () => {
           }}
           transition="all 0.2s ease-in-out"
           download>
-          <a href="https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO">
             Download resume
-          </a>
         </Button>
       </VStack>
     </FullScreenSection>
