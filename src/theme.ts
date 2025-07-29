@@ -1,4 +1,4 @@
-import { chakra, color, extendTheme, FormHelperText, withDefaultSize, type ThemeConfig } from '@chakra-ui/react';
+import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 
 export const theme: ThemeConfig = extendTheme({
   initialColorMode: 'dark',

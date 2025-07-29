@@ -1,8 +1,7 @@
 import {
   Box,
   Heading,
-  VStack,
-  HStack
+  VStack
 } from "@chakra-ui/react";
 import ContactMeSocials from "./ContactMeSocials";
 import ContactMeForm from "./ContactMeForm";
@@ -15,7 +14,8 @@ const LandingSection = () => {
       pb={64}
       px={8}
       display="flex"
-      justifyContent="center">
+      justifyContent="center"
+      id="contactme-section">
       <VStack w="100%" maxWidth="768px">
         <Heading
           as="h2"

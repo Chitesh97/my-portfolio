@@ -8,7 +8,6 @@ import {
   FormErrorMessage,
   FormLabel,
   Input,
-  Select,
   Textarea,
   VStack,
 } from "@chakra-ui/react";
@@ -69,20 +68,6 @@ const ContactMeForm = () => {
                 <FormHelperText>We'll never share your email.</FormHelperText>
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
-              {/* <FormControl>
-                <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select
-                  id="type"
-                  name="type"
-                  {...formik.getFieldProps("type")}
-                >
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
-                    Open source consultancy session
-                  </option>
-                  <option value="other">Other</option>
-                </Select>
-              </FormControl> */}
               <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
                 <FormLabel htmlFor="comment">Your message</FormLabel>
                 <Textarea

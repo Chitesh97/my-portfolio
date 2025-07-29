@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, HStack, Icon, VStack, Text, Link } from "@chakra-ui/react";
+import { Box, Heading, HStack, Icon, VStack, Link } from "@chakra-ui/react";
 import { socials } from "../data";
 
 const ContactMeSocials = () => {

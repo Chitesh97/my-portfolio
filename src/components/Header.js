@@ -7,7 +7,7 @@ const Header = () => {
 
   const bg = useColorMode("gray.50", "gray.900");
   const textColor = useColorMode("gray.800", "gray.100");
-  
+
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -42,6 +42,7 @@ const Header = () => {
         >
           <nav>
             <HStack spacing={8}>
+              <a href="#aboutme" onClick={handleClick("aboutme")}>About me</a>
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
               <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
             </HStack>

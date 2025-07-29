@@ -12,7 +12,8 @@ const AboutMe = () => {
       display="flex"
       flexDir="column"
       pb={32}
-      px={8}>
+      px={8}
+      id="aboutme-section">
       <Heading
         as="h2"
         color="purple.500"
