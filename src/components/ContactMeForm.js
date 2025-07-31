@@ -19,7 +19,7 @@ import emailjs from "@emailjs/browser";
 const ContactMeForm = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
-  const { formRef } = useRef();
+  const formRef = useRef(null);
 
   const formik = useFormik({
     initialValues: {
