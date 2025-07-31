@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -13,12 +13,11 @@ import {
 } from "@chakra-ui/react";
 import * as Yup from 'yup';
 import useSubmit from "../hooks/useSubmit";
-import { useAlertContext } from "../context/alertContext";
 import emailjs from "@emailjs/browser";
+import { emailJsCreds } from "../data";
 
 const ContactMeForm = () => {
   const { isLoading, response, submit } = useSubmit();
-  const { onOpen } = useAlertContext();
   const formRef = useRef(null);
 
   const formik = useFormik({
@@ -30,10 +29,10 @@ const ContactMeForm = () => {
     onSubmit: async (values, {resetForm}) => {
       try {
         const result = await emailjs.sendForm(
-          'service_smooom6',
-          'template_odptxru',
+          emailJsCreds.serviceId,
+          emailJsCreds.templateId,
           formRef.current,
-          'lzucFrh8F7e-GQUgN' // Replace with your actual EmailJS public key
+          emailJsCreds.publicKey
         );
         console.log("SUCCESS!", result.status, result.text);
         resetForm();
@@ -45,17 +44,9 @@ const ContactMeForm = () => {
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
       email: Yup.string().email("Please enter a valid email address").required("Required"),
-      comment: Yup.string().min(25, "Please enter at least 25 characters").required("Required")
+      comment: Yup.string().min(10, "Please enter at least 10 characters").required("Required")
     }),
   });
-
-  // useEffect(() => {
-  //   // if (response) {
-  //   //   onOpen(response.type, response.message);
-  //   //   if (response.type === 'success') formik.resetForm();
-  //   // }
-
-  // }, [response]);
 
   return (
     <Box rounded="md" w="100%" maxW="480px" margin="0 auto">

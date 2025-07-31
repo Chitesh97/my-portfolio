@@ -7,6 +7,12 @@ export const personalDetails = {
   onlineResumeLink: "https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
 };
 
+export const emailJsCreds = {
+  serviceId: 'service_smooom6',
+  templateId: 'template_odptxru',
+  publicKey: 'lzucFrh8F7e-GQUgN',
+};
+
 export const socials = [
   {
     icon: LuLinkedin,
