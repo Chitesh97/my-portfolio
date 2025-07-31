@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -14,21 +14,33 @@ import {
 import * as Yup from 'yup';
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/alertContext";
+import emailjs from "@emailjs/browser";
 
 const ContactMeForm = () => {
   const { isLoading, response, submit } = useSubmit();
   const { onOpen } = useAlertContext();
+  const { formRef } = useRef();
 
   const formik = useFormik({
     initialValues: {
       firstName: "",
       email: "",
-      type: "hireMe",
       comment: ""
     },
-    onSubmit: (values) => {
-      console.log(values);
-      submit("", values);
+    onSubmit: async (values, {resetForm}) => {
+      try {
+        const result = await emailjs.sendForm(
+          'service_smooom6',
+          'template_odptxru',
+          formRef.current,
+          'lzucFrh8F7e-GQUgN' // Replace with your actual EmailJS public key
+        );
+        console.log("SUCCESS!", result.status, result.text);
+        resetForm();
+      } catch(error) {
+        console.error("FAILED...", error);
+        console.info("formRef...", formRef.current);
+      }
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
@@ -37,54 +49,55 @@ const ContactMeForm = () => {
     }),
   });
 
-  useEffect(() => {
-    if (response) {
-      onOpen(response.type, response.message);
-      if (response.type === 'success') formik.resetForm();
-    }
-  }, [response]);
+  // useEffect(() => {
+  //   // if (response) {
+  //   //   onOpen(response.type, response.message);
+  //   //   if (response.type === 'success') formik.resetForm();
+  //   // }
+
+  // }, [response]);
 
   return (
-        <Box rounded="md" w="100%" maxW="480px" margin="0 auto">
-          <form onSubmit={formik.handleSubmit}>
-            <VStack spacing={4}>
-              <FormControl isInvalid={formik.errors.firstName && formik.touched.firstName}>
-                <FormLabel htmlFor="firstName">Name</FormLabel>
-                <Input
-                  id="firstName"
-                  name="firstName"
-                  {...formik.getFieldProps("firstName")}
-                />
-                <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
-              </FormControl>
-              <FormControl isInvalid={formik.errors.email && formik.touched.email}>
-                <FormLabel htmlFor="email">Email Address</FormLabel>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  {...formik.getFieldProps("email")}
-                />
-                <FormHelperText>We'll never share your email.</FormHelperText>
-                <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
-              </FormControl>
-              <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
-                <FormLabel htmlFor="comment">Your message</FormLabel>
-                <Textarea
-                  id="comment"
-                  name="comment"
-                  height={120}
-                  color="primary.text"
-                  {...formik.getFieldProps("comment")}
-                />
-                <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
-              </FormControl>
-              <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
-                Send message
-              </Button>
-            </VStack>
-          </form>
-        </Box>
+    <Box rounded="md" w="100%" maxW="480px" margin="0 auto">
+      <form onSubmit={formik.handleSubmit} ref={formRef}>
+        <VStack spacing={4}>
+          <FormControl isInvalid={formik.errors.firstName && formik.touched.firstName}>
+            <FormLabel htmlFor="firstName">Name</FormLabel>
+            <Input
+              id="firstName"
+              name="firstName"
+              {...formik.getFieldProps("firstName")}
+            />
+            <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
+          </FormControl>
+          <FormControl isInvalid={formik.errors.email && formik.touched.email}>
+            <FormLabel htmlFor="email">Email Address</FormLabel>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              {...formik.getFieldProps("email")}
+            />
+            <FormHelperText>We'll never share your email.</FormHelperText>
+            <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+          </FormControl>
+          <FormControl isInvalid={formik.errors.comment && formik.touched.comment}>
+            <FormLabel htmlFor="comment">Your message</FormLabel>
+            <Textarea
+              id="comment"
+              name="comment"
+              height={120}
+              color="primary.text"
+              {...formik.getFieldProps("comment")}
+            />
+            <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
+          </FormControl>
+          <Button type="submit" colorScheme="purple" width="full" isLoading={isLoading}>
+            Send message
+          </Button>
+        </VStack>
+      </form>
+    </Box>
   );
 };
 
