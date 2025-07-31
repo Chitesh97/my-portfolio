@@ -26,20 +26,34 @@ const ContactMeForm = () => {
       email: "",
       comment: ""
     },
-    onSubmit: async (values, {resetForm}) => {
-      try {
-        const result = await emailjs.sendForm(
-          emailJsCreds.serviceId,
-          emailJsCreds.templateId,
-          formRef.current,
-          emailJsCreds.publicKey
-        );
-        console.log("SUCCESS!", result.status, result.text);
-        resetForm();
-      } catch(error) {
-        console.error("FAILED...", error);
-        console.info("formRef...", formRef.current);
-      }
+    onSubmit: async (values, { resetForm }) => {
+      // try {
+      //   const result = await emailjs.sendForm(
+      //     emailJsCreds.serviceId,
+      //     emailJsCreds.templateId,
+      //     formRef.current,
+      //     emailJsCreds.publicKey
+      //   );
+      //   console.log("SUCCESS!", result.status, result.text);
+      //   resetForm();
+      // } catch(error) {
+      //   console.error("FAILED...", error);
+      //   console.info("formRef...", formRef.current);
+      // }
+      emailjs.sendForm(
+        emailJsCreds.serviceId,
+        emailJsCreds.templateId,
+        formRef.current,
+        emailJsCreds.publicKey
+      ).then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          resetForm();
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required("Required"),
