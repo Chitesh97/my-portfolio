@@ -15,6 +15,7 @@ import * as Yup from 'yup';
 import useSubmit from "../hooks/useSubmit";
 import emailjs from "@emailjs/browser";
 import { emailJsCreds } from "../data";
+import { toast } from "react-toastify";
 
 const ContactMeForm = () => {
   const { isLoading, response, submit } = useSubmit();
@@ -48,10 +49,12 @@ const ContactMeForm = () => {
       ).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
-          resetForm();
+          toast.success("Your message has been successfully sent. He'll get back to within 1-2 days.");
+          // resetForm();
         },
         (error) => {
           console.log('FAILED...', error);
+          toast.error("There has been some error with sending your request. Please check your network connection and then try again.");
         },
       );
     },

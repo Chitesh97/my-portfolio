@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Alert from './components/Alert';
 import {AlertProvider} from './context/alertContext';
 import { theme } from './theme.ts';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <ProjectsSection />
           <ContactMeSection />
           <Alert />
+          <ToastContainer />
         </main>
         <footer>
           <Footer />
