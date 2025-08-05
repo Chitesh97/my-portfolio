@@ -29,7 +29,8 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      backgroundColor="transparent"
+      boxShadow="0 10px 8px #CCC"
+      bg="inherit"
       css={{ zIndex: '10'}}
     >
       <Box maxWidth="1280px" margin="0 auto">

@@ -25,10 +25,18 @@ export const theme: ThemeConfig = extendTheme({
         bg: "primary.background",
         color: "primary.text",
         transition: "background 0.2s ease-in-out",
+      },
+      header: {
+        bg: "yellow",
       }
     }
   },
   components: {
+    // Header: {
+    //   baseStyles: {
+    //     bg: "red",
+    //   }
+    // },
     Heading: {
       baseStyle: {
         color: "primary.text",
