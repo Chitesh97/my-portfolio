@@ -27,7 +27,7 @@ export const theme: ThemeConfig = extendTheme({
         transition: "background 0.2s ease-in-out",
       },
       header: {
-        bg: "yellow",
+        bg: "primary.background",
       }
     }
   },

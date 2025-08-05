@@ -29,7 +29,7 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      boxShadow="0 10px 8px #CCC"
+      boxShadow="0 1px 8px #CCC"
       bg="inherit"
       css={{ zIndex: '10'}}
     >
