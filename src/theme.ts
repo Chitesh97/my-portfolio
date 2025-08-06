@@ -28,7 +28,6 @@ export const theme: ThemeConfig = extendTheme({
       },
       header: {
         bg: "primary.background",
-        boxShadow: ""
       }
     }
   },
