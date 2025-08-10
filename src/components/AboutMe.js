@@ -21,7 +21,7 @@ const AboutMe = () => {
           pb="8"
           pt="8"
         >
-          About me
+          About Me
         </Heading>
         <VStack
           spacing={4}
