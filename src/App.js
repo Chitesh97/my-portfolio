@@ -22,7 +22,7 @@ function App() {
           <LandingSection />
           <AboutMe />
           <TechStack />
-          <ProjectsSection />
+          {/* <ProjectsSection /> */}
           <ContactMeSection />
           <Alert />
           <ToastContainer />
