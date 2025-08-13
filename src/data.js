@@ -132,10 +132,88 @@ export const TechStackStrip = {
 
 export const projects = [
   {
-    title: "React Space",
-    description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("./images/photo1.jpg"),
-  },
-  
+  "projects": [
+    {
+      "client": "Australian Government Agriculture Program",
+      "industry": "Government",
+      "role": "Lead UI Developer",
+      "start": "2024-01-08",
+      "end": "2025-06-20",
+      "platform": "Pega 24.1.2 / 8.8.2",
+      "description": "Led the UI delivery for a major digital transformation initiative in the agriculture sector. Designed and implemented accessible, responsive, and reusable UI components using Pega Government Platform, significantly improving user experience for both internal and public portals. Created a suite of reusable design templates, landing pages, and correspondence formats that accelerated future feature delivery by 30% while ensuring WCAG AA compliance.",
+      "skills": ["Pega Government Platform", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA", "Theme Cosmos", "Responsive Design", "Design Templates", "PDF Generation"]
+    },
+    {
+      "client": "Canadian Bank Contact Center Modernization",
+      "industry": "Financial Services",
+      "role": "Senior UI Developer",
+      "start": "2024-01-02",
+      "end": "2024-06-21",
+      "platform": "Pega 8.8.x",
+      "description": "Modernized legacy Pega 7.x call center applications to Pega Infinity Cloud, introducing a streamlined, accessible UI that reduced agent handling time by 15%. Implemented WCAG-compliant design patterns, improved UI responsiveness, and collaborated with cross-functional teams to ensure a seamless migration with zero downtime.",
+      "skills": ["Pega Customer Service", "Accessibility", "WCAG AA", "Pega Call", "UI Kit", "CSS", "HTML", "JavaScript", "jQuery"]
+    },
+    {
+      "client": "Global Tech Leadership Engagement Platform",
+      "industry": "Technology Services",
+      "role": "Senior UI Developer",
+      "start": "2023-11-13",
+      "end": "2024-05-31",
+      "platform": "Pega 24.1.0 (Constellation)",
+      "description": "Built a leadership engagement management platform on Pega Constellation, enabling executives to track initiatives in real-time. Established UI best practices for the team, mentored developers on Constellation architecture, and implemented design-thinking driven workflows that improved stakeholder adoption by 40%.",
+      "skills": ["Constellation", "Design Thinking", "App Studio", "Design Templates", "Figma", "Reporting"]
+    },
+    {
+      "client": "New Zealand Transport Digital Services",
+      "industry": "Government",
+      "role": "Lead UI Developer",
+      "start": "2021-11-08",
+      "end": "2023-10-31",
+      "platform": "Pega 8.6",
+      "description": "Served as the sole point of contact for all UI requirements across multiple initiatives, including building an enterprise UI layer, public-facing portals, and internal systems. Delivered responsive, accessible solutions with WCAG AA compliance, reducing accessibility-related defects by 90%. Introduced reusable design templates and portal frameworks that shortened future development cycles by 25%.",
+      "skills": ["Pega Government Platform", "Theme Cosmos", "App Studio", "Design Templates", "Accessibility", "WCAG AA", "HTML", "CSS", "JavaScript", "jQuery", "PDF Generation", "Figma"]
+    },
+    {
+      "client": "Australian Government Strata Bond Lodgement",
+      "industry": "Government",
+      "role": "UI Developer",
+      "start": "2021-05-24",
+      "end": "2021-08-12",
+      "platform": "Pega 8.6",
+      "description": "Designed and developed a custom portal for strata bond lodgement, ensuring it met brand and accessibility guidelines. Improved form usability and reduced submission errors by 20% through intuitive UI patterns and responsive design.",
+      "skills": ["Pega Government Platform", "Pega Mobile Client", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"]
+    },
+    {
+      "client": "Australian Government Emergency Quarantine Management",
+      "industry": "Government",
+      "role": "Senior System Architect / UI Developer",
+      "start": "2021-03-10",
+      "end": "2021-06-18",
+      "platform": "Pega 8.5.2",
+      "description": "Delivered the UI for a high-priority quarantine management system during COVID-19. Implemented portal designs, reusable templates, and accessibility enhancements, enabling rapid deployment within 8 weeks to meet urgent operational needs.",
+      "skills": ["Pega Government Platform", "Pega Cloud for Government", "Cosmos", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"]
+    },
+    {
+      "client": "Community Support Case Management",
+      "industry": "Other Services",
+      "role": "UI Developer",
+      "start": "2020-11-23",
+      "end": "2021-05-10",
+      "platform": "Pega 8.4.2",
+      "description": "Developed a Pega Customer Service application for a community support organisation, including dashboards and case workflows. Integrated with House360 to streamline residential program management, reducing manual tracking by 50%.",
+      "skills": ["Pega Customer Service", "Cloud Migration"]
+    },
+    {
+      "client": "Manufacturing Services Citizen Development Initiative",
+      "industry": "Manufacturing and High Technology",
+      "role": "UI Developer",
+      "start": "2020-01-27",
+      "end": "2020-06-30",
+      "platform": "Pega 8.3.4",
+      "description": "Built a citizen-developer friendly Pega Customer Service application with reusable layouts and UX-consistent portals. Implemented Pega Knowledge for faster case resolution and reduced repetitive development work.",
+      "skills": ["Pega Customer Service", "Pega Knowledge", "JavaScript"]
+    }
+  ]
+}
+
 ];
