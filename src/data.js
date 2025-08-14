@@ -152,7 +152,8 @@ export const projects = [
         "end": "2024-06-21",
         "platform": "Pega 8.8.x",
         "description": "Modernized legacy Pega 7.x call center applications to Pega Infinity Cloud, introducing a streamlined, accessible UI that reduced agent handling time by 15%. Implemented WCAG-compliant design patterns, improved UI responsiveness, and collaborated with cross-functional teams to ensure a seamless migration with zero downtime.",
-        "skills": ["Pega Customer Service", "Accessibility", "WCAG AA", "Pega Call", "UI Kit", "CSS", "HTML", "JavaScript", "jQuery"]
+        "skills": ["Pega Customer Service", "Accessibility", "WCAG AA", "Pega Call", "UI Kit", "CSS", "HTML", "JavaScript", "jQuery"],
+        "featured": true
       },
       {
         "client": "Global Tech Leadership Engagement Platform",
@@ -162,7 +163,8 @@ export const projects = [
         "end": "2024-05-31",
         "platform": "Pega 24.1.0 (Constellation)",
         "description": "Built a leadership engagement management platform on Pega Constellation, enabling executives to track initiatives in real-time. Established UI best practices for the team, mentored developers on Constellation architecture, and implemented design-thinking driven workflows that improved stakeholder adoption by 40%.",
-        "skills": ["Constellation", "Design Thinking", "App Studio", "Design Templates", "Figma", "Reporting"]
+        "skills": ["Constellation", "Design Thinking", "App Studio", "Design Templates", "Figma", "Reporting"],
+        "featured": true
       },
       {
         "client": "New Zealand Transport Digital Services",
