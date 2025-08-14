@@ -184,7 +184,7 @@ export const projects = [
         "start": "2021-05-24",
         "end": "2021-08-12",
         "platform": "Pega 8.6",
-        "description": "Designed and developed a custom portal for strata bond lodgement, ensuring it met brand and accessibility guidelines. Improved form usability and reduced submission errors by 20% through intuitive UI patterns and responsive design.",
+        "description": "Designed and developed a custom portal for strata bond lodgement, ensuring it met brand and accessibility guidelines. Improved form usability and reduced submission errors by 20% through intuitive UI patterns and responsive design. Reduced tenant complaint resolution time by 35%.",
         "skills": ["Pega Government Platform", "Pega Mobile Client", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"],
         "featured": true
       },
@@ -228,76 +228,15 @@ export const projects = [
     "techStack": ["Pega Platform", "Pega Customer Service", "Pega Chat", "REST APIs", "Agile"],
     "featured": false
   },
-    ]
-  }
-];
-
-export const projects2 = [
-  [
-
-  {
-    "client": "Non-Profit Social Services Organisation (Australia)",
-    "subtitle": "Case Management Modernisation",
-    "startDate": "Mar 2019",
-    "endDate": "Sep 2019",
-    "description": "Delivered a modernised case management system, digitising paper-based workflows and enabling mobile access for field staff. Reduced case handling times by 40% and improved data accuracy for reporting to government agencies.",
-    "techStack": ["Pega Platform", "Pega Case Management", "REST APIs", "PostgreSQL", "Scrum"],
-    "featured": true
-  },
-  {
-    "client": "Australian State Department of Education",
-    "subtitle": "Grants & Funding Management Portal",
-    "startDate": "Jun 2018",
-    "endDate": "Feb 2019",
-    "description": "Built a secure funding application and approval portal for educational institutions. Introduced automated eligibility checks, reducing manual review effort by 50% and improving transparency of the funding process.",
-    "techStack": ["Pega Platform", "Pega Case Management", "Oracle DB", "SOAP APIs"],
-    "featured": true
-  },
-  {
-    "client": "Australian Strata Management Services",
-    "subtitle": "Property Management Workflow Automation",
-    "startDate": "Jan 2018",
-    "endDate": "May 2018",
-    "description": "Automated property issue reporting and resolution workflows, enabling 24/7 online request submissions and real-time progress tracking. Reduced tenant complaint resolution time by 35%.",
-    "techStack": ["Pega Platform", "REST APIs", "SQL Server"],
-    "featured": true
-  },
   {
     "client": "International Airline Carrier (Asia)",
     "subtitle": "Crew Scheduling and Compliance System",
     "startDate": "Jul 2017",
     "endDate": "Dec 2017",
-    "description": "Implemented a Pega-based crew scheduling system that ensured compliance with aviation regulations. Automated roster generation reduced scheduling conflicts by 80%.",
+    "description": "Mentored the developers to pace them up with Pega UI best practices.",
     "techStack": ["Pega Platform", "Pega Decisioning", "Oracle DB", "SOAP APIs"],
-    "featured": true
+    "featured": false
   },
-  {
-    "client": "National Transport Agency (New Zealand)",
-    "subtitle": "Permit and Licensing Automation",
-    "startDate": "Jan 2017",
-    "endDate": "Jun 2017",
-    "description": "Developed a digital licensing platform for transport operators, reducing manual permit approval times from weeks to days and improving regulatory compliance tracking.",
-    "techStack": ["Pega Platform", "Pega Case Management", "REST APIs", "PostgreSQL"],
-    "featured": true
-  },
-  {
-    "client": "Major Canadian Bank",
-    "subtitle": "Customer Dispute Resolution Platform",
-    "startDate": "Jul 2016",
-    "endDate": "Dec 2016",
-    "description": "Built a Pega-based customer dispute management system, cutting resolution times by 40% and enabling compliance with strict banking dispute timelines.",
-    "techStack": ["Pega Platform", "Pega Customer Service", "Oracle DB", "SOAP APIs"],
-    "featured": true
-  },
-  {
-    "client": "State Government Agriculture Department (Australia)",
-    "subtitle": "Biosecurity Incident Management",
-    "startDate": "Jan 2016",
-    "endDate": "Jun 2016",
-    "description": "Designed and delivered a biosecurity incident reporting and tracking system. Automated alerts to relevant stakeholders reduced incident containment time by 50%.",
-    "techStack": ["Pega Platform", "Pega Case Management", "REST APIs", "SQL Server"],
-    "featured": true
+    ]
   }
-]
-
-]
+];
