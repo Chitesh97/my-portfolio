@@ -141,7 +141,8 @@ export const projects = [
         "end": "2025-06-20",
         "platform": "Pega 24.1.2 / 8.8.2",
         "description": "Led the UI delivery for a major digital transformation initiative in the agriculture sector. Designed and implemented accessible, responsive, and reusable UI components using Pega Government Platform, significantly improving user experience for both internal and public portals. Created a suite of reusable design templates, landing pages, and correspondence formats that accelerated future feature delivery by 30% while ensuring WCAG AA compliance.",
-        "skills": ["Pega Government Platform", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA", "Theme Cosmos", "Responsive Design", "Design Templates", "PDF Generation"]
+        "skills": ["Pega Government Platform", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA", "Theme Cosmos", "Responsive Design", "Design Templates", "PDF Generation"],
+        "featured": true,
       },
       {
         "client": "Canadian Bank Contact Center Modernization",
