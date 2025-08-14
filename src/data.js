@@ -174,7 +174,8 @@ export const projects = [
         "end": "2023-10-31",
         "platform": "Pega 8.6",
         "description": "Served as the sole point of contact for all UI requirements across multiple initiatives, including building an enterprise UI layer, public-facing portals, and internal systems. Delivered responsive, accessible solutions with WCAG AA compliance, reducing accessibility-related defects by 90%. Introduced reusable design templates and portal frameworks that shortened future development cycles by 25%.",
-        "skills": ["Pega Government Platform", "Theme Cosmos", "App Studio", "Design Templates", "Accessibility", "WCAG AA", "HTML", "CSS", "JavaScript", "jQuery", "PDF Generation", "Figma"]
+        "skills": ["Pega Government Platform", "Theme Cosmos", "App Studio", "Design Templates", "Accessibility", "WCAG AA", "HTML", "CSS", "JavaScript", "jQuery", "PDF Generation", "Figma"],
+        "featured": true
       },
       {
         "client": "Australian Government Strata Bond Lodgement",
@@ -184,17 +185,8 @@ export const projects = [
         "end": "2021-08-12",
         "platform": "Pega 8.6",
         "description": "Designed and developed a custom portal for strata bond lodgement, ensuring it met brand and accessibility guidelines. Improved form usability and reduced submission errors by 20% through intuitive UI patterns and responsive design.",
-        "skills": ["Pega Government Platform", "Pega Mobile Client", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"]
-      },
-      {
-        "client": "Australian Government Emergency Quarantine Management",
-        "industry": "Government",
-        "role": "Senior System Architect / UI Developer",
-        "start": "2021-03-10",
-        "end": "2021-06-18",
-        "platform": "Pega 8.5.2",
-        "description": "Delivered the UI for a high-priority quarantine management system during COVID-19. Implemented portal designs, reusable templates, and accessibility enhancements, enabling rapid deployment within 8 weeks to meet urgent operational needs.",
-        "skills": ["Pega Government Platform", "Pega Cloud for Government", "Cosmos", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"]
+        "skills": ["Pega Government Platform", "Pega Mobile Client", "HTML", "CSS", "JavaScript", "jQuery", "Accessibility", "WCAG AA"],
+        "featured": true
       },
       {
         "client": "Community Support Case Management",
@@ -204,43 +196,10 @@ export const projects = [
         "end": "2021-05-10",
         "platform": "Pega 8.4.2",
         "description": "Developed a Pega Customer Service application for a community support organisation, including dashboards and case workflows. Integrated with House360 to streamline residential program management, reducing manual tracking by 50%.",
-        "skills": ["Pega Customer Service", "Cloud Migration"]
+        "skills": ["Pega Customer Service", "Cloud Migration"],
+        "featured": true
       },
       {
-        "client": "Manufacturing Services Citizen Development Initiative",
-        "industry": "Manufacturing and High Technology",
-        "role": "UI Developer",
-        "start": "2020-01-27",
-        "end": "2020-06-30",
-        "platform": "Pega 8.3.4",
-        "description": "Built a citizen-developer friendly Pega Customer Service application with reusable layouts and UX-consistent portals operating across 80+ countries. Implemented Pega Knowledge for faster case resolution and reduced repetitive development work.",
-        "skills": ["Pega Customer Service", "Pega Knowledge", "JavaScript"]
-      }
-    ]
-  }
-];
-
-export const projects2 = [
-  [
-  {
-    "client": "Fortune 500 Consumer Goods Leader",
-    "subtitle": "Global Trade Promotions Platform",
-    "startDate": "Jan 2021",
-    "endDate": "Apr 2024",
-    "description": "Led the design and development of a trade promotions and claims management platform operating across 80+ countries. Built advanced workflow automation that reduced claim processing time by 45% and improved promotional budget tracking accuracy to 98%. Coordinated with cross-functional teams worldwide to ensure compliance, scalability, and seamless integration with finance systems.",
-    "techStack": ["Pega Platform", "Pega Decisioning", "REST APIs", "Jenkins", "PostgreSQL", "Agile"],
-    "featured": true
-  },
-  {
-    "client": "Leading Australian Telecommunications Provider",
-    "subtitle": "Customer Experience Transformation",
-    "startDate": "May 2020",
-    "endDate": "Dec 2020",
-    "description": "Developed customer onboarding and service request workflows, enabling 30% faster resolution of service activation requests. Designed reusable Pega components that reduced development time for future initiatives by 25%. Worked closely with UX designers to streamline customer journeys, leading to higher first-contact resolution rates.",
-    "techStack": ["Pega Platform", "Pega Customer Service", "Pega Chat", "REST APIs", "Agile"],
-    "featured": true
-  },
-  {
     "client": "US Healthcare Equipment & Services Company",
     "subtitle": "Order Management and Fulfilment System",
     "startDate": "Oct 2019",
@@ -249,6 +208,33 @@ export const projects2 = [
     "techStack": ["Pega Platform", "Pega Integration Services", "SOAP APIs", "SQL Server", "Agile"],
     "featured": true
   },
+      {
+        "client": "Fortune 500 Consumer Goods Leader",
+        "industry": "Manufacturing and High Technology",
+        "role": "UI Developer",
+        "start": "2020-01-27",
+        "end": "2020-06-30",
+        "platform": "Pega 8.3.4",
+        "description": "Built a citizen-developer friendly Pega Customer Service application with reusable layouts and UX-consistent portals operating across 80+ countries. Implemented Pega Knowledge Management for faster case resolution and reduced repetitive development work.",
+        "skills": ["Pega Customer Service", "Pega Knowledge", "JavaScript"],
+        "featured": true
+      },
+      {
+    "client": "Leading Australian Telecommunications Provider",
+    "subtitle": "Customer Experience Transformation",
+    "startDate": "May 2020",
+    "endDate": "Dec 2020",
+    "description": "Worked on accessibility",
+    "techStack": ["Pega Platform", "Pega Customer Service", "Pega Chat", "REST APIs", "Agile"],
+    "featured": false
+  },
+    ]
+  }
+];
+
+export const projects2 = [
+  [
+
   {
     "client": "Non-Profit Social Services Organisation (Australia)",
     "subtitle": "Case Management Modernisation",
