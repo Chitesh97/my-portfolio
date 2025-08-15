@@ -134,7 +134,7 @@ export const projects = [
   {
     "projects": [
       {
-        "client": "Australian Government Agriculture Program",
+        "client": "Australian Government Agriculture Progra",
         "industry": "Government",
         "role": "Lead UI Developer",
         "start": "2024-01-08",
@@ -200,14 +200,14 @@ export const projects = [
         "featured": true
       },
       {
-    "client": "US Healthcare Equipment & Services Company",
-    "subtitle": "Order Management and Fulfilment System",
-    "startDate": "Oct 2019",
-    "endDate": "Apr 2020",
-    "description": "Built a Pega-based order and delivery tracking platform for healthcare equipment, reducing order processing delays by 35%. Automated compliance checks and integrated with inventory systems, ensuring equipment delivery met strict healthcare regulatory timelines.",
-    "techStack": ["Pega Platform", "Pega Integration Services", "SOAP APIs", "SQL Server", "Agile"],
-    "featured": true
-  },
+        "client": "US Healthcare Equipment & Services Company",
+        "subtitle": "Order Management and Fulfilment System",
+        "startDate": "Oct 2019",
+        "endDate": "Apr 2020",
+        "description": "Built a Pega-based order and delivery tracking platform for healthcare equipment, reducing order processing delays by 35%. Automated compliance checks and integrated with inventory systems, ensuring equipment delivery met strict healthcare regulatory timelines.",
+        "techStack": ["Pega Platform", "Pega Integration Services", "SOAP APIs", "SQL Server", "Agile"],
+        "featured": true
+      },
       {
         "client": "Fortune 500 Consumer Goods Leader",
         "industry": "Manufacturing and High Technology",
@@ -220,23 +220,23 @@ export const projects = [
         "featured": true
       },
       {
-    "client": "Leading Australian Telecommunications Provider",
-    "subtitle": "Customer Experience Transformation",
-    "startDate": "May 2020",
-    "endDate": "Dec 2020",
-    "description": "Worked on accessibility",
-    "techStack": ["Pega Platform", "Pega Customer Service", "Pega Chat", "REST APIs", "Agile"],
-    "featured": false
-  },
-  {
-    "client": "International Airline Carrier (Asia)",
-    "subtitle": "Crew Scheduling and Compliance System",
-    "startDate": "Jul 2017",
-    "endDate": "Dec 2017",
-    "description": "Mentored the developers to pace them up with Pega UI best practices.",
-    "techStack": ["Pega Platform", "Pega Decisioning", "Oracle DB", "SOAP APIs"],
-    "featured": false
-  },
+        "client": "Leading Australian Telecommunications Provider",
+        "subtitle": "Customer Experience Transformation",
+        "startDate": "May 2020",
+        "endDate": "Dec 2020",
+        "description": "Worked on accessibility",
+        "techStack": ["Pega Platform", "Pega Customer Service", "Pega Chat", "REST APIs", "Agile"],
+        "featured": false
+      },
+      {
+        "client": "International Airline Carrier (Asia)",
+        "subtitle": "Crew Scheduling and Compliance System",
+        "startDate": "Jul 2017",
+        "endDate": "Dec 2017",
+        "description": "Mentored the developers to pace them up with Pega UI best practices.",
+        "techStack": ["Pega Platform", "Pega Decisioning", "Oracle DB", "SOAP APIs"],
+        "featured": false
+      },
     ]
   }
 ];
