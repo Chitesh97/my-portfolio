@@ -134,7 +134,7 @@ export const projects = [
   {
     "projects": [
       {
-        "client": "Australian Government Agriculture Progra",
+        "client": "Australian Government Agriculture Program",
         "industry": "Government",
         "role": "Lead UI Developer",
         "start": "2024-01-08",
