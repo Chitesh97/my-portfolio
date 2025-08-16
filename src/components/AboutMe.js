@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <Box
       pt={16}
-      pb={64}
+      pb={24}
       px={8}
       display="flex"
       justifyContent="center"

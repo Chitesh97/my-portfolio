@@ -11,6 +11,7 @@ export default function TechStack() {
       alignItems="center"
       display="flex"
       flexDir="column"
+      pt={16}
       pb={24}
       px={8}>
       <Heading

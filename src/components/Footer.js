@@ -14,7 +14,8 @@ const Footer = () => {
           maxWidth="1024px"
           height={16}
         >
-          <p>Made with 💌 using ReactJS, Chakra UI and Formik</p>
+          <p>© 2025 Chitesh Goyal. All rights reserved.</p>
+          <p>Made with 💌 using ReactJS & Chakra UI</p>
         </Flex>
       </div>
     </Box>
