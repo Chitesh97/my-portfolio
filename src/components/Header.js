@@ -1,11 +1,13 @@
 import React from "react";
-import { Box, HStack, IconButton } from "@chakra-ui/react";
+import { Box, HStack, IconButton, Button, CloseButton, Drawer, Portal, DrawerBody  } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
+import { useState } from "react";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
+  const [open, setOpen] = useState(false);
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -53,6 +55,11 @@ const Header = () => {
           rounded="full">
             { colorMode === 'light' ? <MdDarkMode /> : <RiSunFill /> }
           </IconButton>
+          <Drawer>
+            <DrawerBody>
+              Hello
+            </DrawerBody>
+          </Drawer>
         </HStack>
       </Box>
     </Box>
