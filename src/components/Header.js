@@ -1,15 +1,11 @@
 import React from "react";
-import { Box, HStack, Button, IconButton } from "@chakra-ui/react";
+import { Box, HStack, IconButton } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
-import { LuSun } from "react-icons/lu";
 import { RiSunFill } from "react-icons/ri";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-
-  const bg = useColorMode("gray.50", "gray.900");
-  const textColor = useColorMode("gray.800", "gray.100");
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -54,7 +50,6 @@ const Header = () => {
           <IconButton
           onClick={toggleColorMode}
           variant="ghost"
-          size="lg"
           rounded="full">
             { colorMode === 'light' ? <MdDarkMode /> : <RiSunFill /> }
           </IconButton>
