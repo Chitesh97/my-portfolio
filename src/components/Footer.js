@@ -8,13 +8,15 @@ const Footer = () => {
         <Flex
           margin="0 auto"
           px={12}
+          py={{ base: 4}}
           color="white"
-          justifyContent="space-between"
+          justifyContent={{ base: "center", md: "space-between", lg: "space-between" }}
           alignItems="center"
-          height={16}
+          flexWrap={{ base: "wrap", md: "wrap", lg: "nowrap" }}
+          minHeight={16}
         >
-          <p>© 2025 Chitesh Goyal. All rights reserved.</p>
-          <p>Made with 💌 using ReactJS & Chakra UI</p>
+          <p>© 2025 Chitesh Goyal. All rights reserved. </p>
+          <p> Made with 💌 using ReactJS & Chakra UI</p>
         </Flex>
       </div>
     </Box>

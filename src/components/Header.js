@@ -1,6 +1,9 @@
 import React from "react";
-import { Box, HStack, Button } from "@chakra-ui/react";
+import { Box, HStack, Button, IconButton } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
+import { MdDarkMode } from "react-icons/md";
+import { LuSun } from "react-icons/lu";
+import { RiSunFill } from "react-icons/ri";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -48,9 +51,13 @@ const Header = () => {
               <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
             </HStack>
           </nav>
-          <Button onClick={toggleColorMode}>
-            Toggle {colorMode === 'light' ? 'dark' : 'light'}
-          </Button>
+          <IconButton
+          onClick={toggleColorMode}
+          variant="ghost"
+          size="lg"
+          rounded="full">
+            { colorMode === 'light' ? <MdDarkMode /> : <RiSunFill /> }
+          </IconButton>
         </HStack>
       </Box>
     </Box>
