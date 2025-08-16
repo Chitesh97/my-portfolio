@@ -32,11 +32,6 @@ export const theme: ThemeConfig = extendTheme({
     }
   },
   components: {
-    // Header: {
-    //   baseStyles: {
-    //     bg: "red",
-    //   }
-    // },
     Heading: {
       baseStyle: {
         color: "primary.text",

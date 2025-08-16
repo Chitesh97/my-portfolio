@@ -9,9 +9,8 @@ const Footer = () => {
           margin="0 auto"
           px={12}
           color="white"
-          justifyContent="center"
+          justifyContent="space-between"
           alignItems="center"
-          maxWidth="1024px"
           height={16}
         >
           <p>© 2025 Chitesh Goyal. All rights reserved.</p>
