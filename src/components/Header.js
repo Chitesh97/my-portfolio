@@ -1,9 +1,10 @@
 import React from "react";
-import { Box, HStack, IconButton, Button, CloseButton, Drawer, Portal, DrawerBody  } from "@chakra-ui/react";
+import { Box, HStack, IconButton, Button, CloseButton, Drawer, Portal, DrawerBody } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,7 +33,7 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       boxShadow="0 1px 8px #CCC"
       bg="inherit"
-      css={{ zIndex: '10'}}
+      css={{ zIndex: '10' }}
     >
       <Box maxWidth="1280px" margin="0 auto">
         <HStack
@@ -50,11 +51,21 @@ const Header = () => {
             </HStack>
           </nav>
           <IconButton
-          onClick={toggleColorMode}
-          variant="ghost"
-          rounded="full">
-            { colorMode === 'light' ? <MdDarkMode /> : <RiSunFill /> }
+            onClick={toggleColorMode}
+            variant="ghost"
+            rounded="full">
+            {colorMode === 'light' ? <MdDarkMode size={24} /> : <RiSunFill size={24} />}
           </IconButton>
+          <IconButton
+            aria-label="Open menu"
+            icon={<GiHamburgerMenu size={24} />}
+            variant="ghost"
+            // onClick={onOpen}
+            display={{ base: "flex", md: "flex", lg: "none" }}
+            borderColor="white"
+            _hover={{ bg: "purple.500" }}
+          />
+
           <Drawer>
             <DrawerBody>
               Hello
