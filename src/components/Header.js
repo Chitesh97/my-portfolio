@@ -44,7 +44,9 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            <HStack spacing={8}>
+            <HStack
+            display={{ base: "none", lg: "flex" }}
+            spacing={8}>
               <a href="#aboutme" onClick={handleClick("aboutme")}>About me</a>
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
               <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
