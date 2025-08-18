@@ -13,6 +13,7 @@ const Card = ({ title, description }) => {
       background="white"
       cursor="pointer"
       borderRadius="xl"
+      border="1px solid #CCC"
     >
       <VStack spacing={2} p={5} alignItems="flex-start">
         <Heading as="h4" size="md" color="black">{title}</Heading>
