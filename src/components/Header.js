@@ -76,13 +76,13 @@ const Header = () => {
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <VStack spacing={4} align="stretch">
-                  <Text as="a" href="#about" onClick={handleClick("aboutme")}>
+                  <Text as="a" href="#about" style={{ lineHeight: "3" }} onClick={handleClick("aboutme")}>
                     About me
                   </Text>
-                  <Text as="a" href="#projects" onClick={handleClick("projects")}>
+                  <Text as="a" href="#projects" style={{ lineHeight: "3" }} onClick={handleClick("projects")}>
                     Projects
                   </Text>
-                  <Text as="a" href="#contact" onClick={handleClick("contactme")}>
+                  <Text as="a" href="#contact" style={{ lineHeight: "3" }} onClick={handleClick("contactme")}>
                     Contact me
                   </Text>
                 </VStack>
