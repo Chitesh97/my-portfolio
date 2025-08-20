@@ -17,6 +17,7 @@ const Header = () => {
         behavior: "smooth",
         block: "start",
       });
+      onClose();
     }
   };
 
@@ -48,7 +49,7 @@ const Header = () => {
               spacing={8}>
               <a href="#aboutme" onClick={handleClick("aboutme")}>About me</a>
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
-              <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
+              <a href="#contact-me" onClick={handleClick("contactme")}>Contact me</a>
             </HStack>
           </nav>
           <IconButton
@@ -71,17 +72,17 @@ const Header = () => {
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton />
-              <DrawerHeader>Menu</DrawerHeader>
+              <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <VStack spacing={4} align="stretch">
-                  <Text as="a" href="#about" onClick={onClose}>
-                    About
+                  <Text as="a" href="#about" onClick={handleClick("aboutme")}>
+                    About me
                   </Text>
-                  <Text as="a" href="#projects" onClick={onClose}>
+                  <Text as="a" href="#projects" onClick={handleClick("projects")}>
                     Projects
                   </Text>
-                  <Text as="a" href="#contact" onClick={onClose}>
-                    Contact
+                  <Text as="a" href="#contact" onClick={handleClick("contactme")}>
+                    Contact me
                   </Text>
                 </VStack>
               </DrawerBody>
