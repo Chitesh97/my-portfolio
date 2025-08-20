@@ -1,14 +1,13 @@
 import React from "react";
-import { Box, HStack, IconButton, Button, CloseButton, Drawer, Portal, DrawerBody } from "@chakra-ui/react";
-import { useColorMode } from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, IconButton, useColorMode, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader } from "@chakra-ui/react";
+import {  } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
-import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const [open, setOpen] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -45,8 +44,8 @@ const Header = () => {
         >
           <nav>
             <HStack
-            display={{ base: "none", lg: "flex" }}
-            spacing={8}>
+              display={{ base: "none", lg: "flex" }}
+              spacing={8}>
               <a href="#aboutme" onClick={handleClick("aboutme")}>About me</a>
               <a href="#projects" onClick={handleClick("projects")}>Projects</a>
               <a href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
@@ -62,16 +61,31 @@ const Header = () => {
             aria-label="Open menu"
             icon={<GiHamburgerMenu size={24} />}
             variant="ghost"
-            // onClick={onOpen}
+            onClick={onOpen}
             display={{ base: "flex", md: "flex", lg: "none" }}
             borderColor="white"
-            _hover={{ bg: "purple.500" }}
+            rounded={4}
           />
 
-          <Drawer>
-            <DrawerBody>
-              Hello
-            </DrawerBody>
+          <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton />
+              <DrawerHeader>Menu</DrawerHeader>
+              <DrawerBody>
+                <VStack spacing={4} align="stretch">
+                  <Text as="a" href="#about" onClick={onClose}>
+                    About
+                  </Text>
+                  <Text as="a" href="#projects" onClick={onClose}>
+                    Projects
+                  </Text>
+                  <Text as="a" href="#contact" onClick={onClose}>
+                    Contact
+                  </Text>
+                </VStack>
+              </DrawerBody>
+            </DrawerContent>
           </Drawer>
         </HStack>
       </Box>
