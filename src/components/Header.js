@@ -4,6 +4,7 @@ import {  } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
+import ContactMeSocials from "./ContactMeSocials";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -71,7 +72,7 @@ const Header = () => {
           <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>
-              <DrawerCloseButton />
+              <DrawerCloseButton style={{top: "16px"}} />
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <VStack spacing={4} align="stretch">
@@ -85,6 +86,7 @@ const Header = () => {
                     Contact me
                   </Text>
                 </VStack>
+                {/* <ContactMeSocials /> */}
               </DrawerBody>
             </DrawerContent>
           </Drawer>
