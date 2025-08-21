@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, HStack, VStack, Text, IconButton, useColorMode, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader } from "@chakra-ui/react";
-import {  } from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, IconButton, Icon, Heading, Link, useColorMode, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerBody, DrawerCloseButton, DrawerHeader } from "@chakra-ui/react";
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ContactMeSocials from "./ContactMeSocials";
+import { socials } from "../data";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -72,7 +72,7 @@ const Header = () => {
           <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>
-              <DrawerCloseButton style={{top: "16px"}} />
+              <DrawerCloseButton style={{ top: "16px" }} />
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <VStack spacing={4} align="stretch">
@@ -87,6 +87,19 @@ const Header = () => {
                   </Text>
                 </VStack>
                 {/* <ContactMeSocials /> */}
+                <VStack spacing={4}>
+                  {socials.map(social => {
+                    return (
+                      <VStack spacing={4}>
+                        {/* <Heading as="h4" size="sm" fontWeight="semibold" color="#64676D">{social.label}</Heading> */}
+                        <Icon
+                                        as={social.icon}
+                                        boxSize="18px"></Icon>
+                        <Link href={social.url} fontWeight="medium">{social.displayUrl}</Link>
+                      </VStack>
+                    )
+                  })}
+                </VStack>
               </DrawerBody>
             </DrawerContent>
           </Drawer>
