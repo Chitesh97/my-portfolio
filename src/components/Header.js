@@ -3,8 +3,8 @@ import { Box, HStack, VStack, Text, IconButton, Icon, Heading, Link, useColorMod
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
-import ContactMeSocials from "./ContactMeSocials";
 import { socials } from "../data";
+import Socials from "./Socials";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -86,22 +86,11 @@ const Header = () => {
                     Contact me
                   </Text>
                 </VStack>
-                <VStack spacing={8} alignItems="flex-start" pt={8}>
-                  {socials.map(social => {
-                    return (
-                      <VStack spacing={2} alignItems="flex-start">
-                        {/* <Heading as="h4" size="sm" fontWeight="semibold" color="#64676D">{social.label}</Heading> */}
-                        <Icon
-                          as={social.icon}
-                          boxSize="18px"></Icon>
-                        <Link href={social.url} fontWeight="medium">{social.displayUrl}</Link>
-                      </VStack>
-                    )
-                  })}
-                </VStack>
+                <Socials />
               </DrawerBody>
             </DrawerContent>
           </Drawer>
+          
         </HStack>
       </Box>
     </Box>
