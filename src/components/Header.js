@@ -75,7 +75,7 @@ const Header = () => {
               <DrawerCloseButton style={{ top: "16px" }} />
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
-                <VStack spacing={4} align="stretch">
+                <VStack spacing={4} align="stretch" py={4}>
                   <Text as="a" href="#about" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("aboutme")}>
                     About me
                   </Text>
@@ -86,10 +86,10 @@ const Header = () => {
                     Contact me
                   </Text>
                 </VStack>
-                <VStack spacing={4} alignItems="flex-start">
+                <VStack spacing={8} alignItems="flex-start" pt={8}>
                   {socials.map(social => {
                     return (
-                      <VStack spacing={4} alignItems="flex-start">
+                      <VStack spacing={2} alignItems="flex-start">
                         {/* <Heading as="h4" size="sm" fontWeight="semibold" color="#64676D">{social.label}</Heading> */}
                         <Icon
                           as={social.icon}
