@@ -76,25 +76,24 @@ const Header = () => {
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <VStack spacing={4} align="stretch">
-                  <Text as="a" href="#about" style={{ lineHeight: "3" }} onClick={handleClick("aboutme")}>
+                  <Text as="a" href="#about" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("aboutme")}>
                     About me
                   </Text>
-                  <Text as="a" href="#projects" style={{ lineHeight: "3" }} onClick={handleClick("projects")}>
+                  <Text as="a" href="#projects" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("projects")}>
                     Projects
                   </Text>
-                  <Text as="a" href="#contact" style={{ lineHeight: "3" }} onClick={handleClick("contactme")}>
+                  <Text as="a" href="#contact" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("contactme")}>
                     Contact me
                   </Text>
                 </VStack>
-                {/* <ContactMeSocials /> */}
-                <VStack spacing={4}>
+                <VStack spacing={4} alignItems="flex-start">
                   {socials.map(social => {
                     return (
-                      <VStack spacing={4}>
+                      <VStack spacing={4} alignItems="flex-start">
                         {/* <Heading as="h4" size="sm" fontWeight="semibold" color="#64676D">{social.label}</Heading> */}
                         <Icon
-                                        as={social.icon}
-                                        boxSize="18px"></Icon>
+                          as={social.icon}
+                          boxSize="18px"></Icon>
                         <Link href={social.url} fontWeight="medium">{social.displayUrl}</Link>
                       </VStack>
                     )
