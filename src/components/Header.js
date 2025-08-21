@@ -3,7 +3,6 @@ import { Box, HStack, VStack, Text, IconButton, Icon, Heading, Link, useColorMod
 import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { socials } from "../data";
 import Socials from "./Socials";
 
 const Header = () => {
@@ -90,7 +89,7 @@ const Header = () => {
               </DrawerBody>
             </DrawerContent>
           </Drawer>
-          
+
         </HStack>
       </Box>
     </Box>
