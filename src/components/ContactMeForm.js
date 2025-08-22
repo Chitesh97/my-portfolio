@@ -28,19 +28,6 @@ const ContactMeForm = () => {
       comment: ""
     },
     onSubmit: async (values, { resetForm }) => {
-      // try {
-      //   const result = await emailjs.sendForm(
-      //     emailJsCreds.serviceId,
-      //     emailJsCreds.templateId,
-      //     formRef.current,
-      //     emailJsCreds.publicKey
-      //   );
-      //   console.log("SUCCESS!", result.status, result.text);
-      //   resetForm();
-      // } catch(error) {
-      //   console.error("FAILED...", error);
-      //   console.info("formRef...", formRef.current);
-      // }
       emailjs.sendForm(
         emailJsCreds.serviceId,
         emailJsCreds.templateId,
@@ -49,8 +36,8 @@ const ContactMeForm = () => {
       ).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
-          toast.success("Your message has been successfully sent. He'll get back to within 1-2 days.");
-          // resetForm();
+          toast.success("Your message has been successfully sent. He'll get back to you within 48 hours.");
+          resetForm();
         },
         (error) => {
           console.log('FAILED...', error);

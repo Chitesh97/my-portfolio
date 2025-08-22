@@ -4,7 +4,8 @@ import { LuGithub, LuLinkedin, LuPhoneCall } from "react-icons/lu";
 export const personalDetails = {
   heading: "Chitesh Goyal",
   subHeading: "Translating business needs into pixel-perfect, user-first web apps",
-  onlineResumeLink: "https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO"
+  onlineResumeLink: "https://drive.google.com/uc?export=download&id=1OwGZoXcfEkzFKJ9duGWwYk-X-GbtMhBO",
+  description: "Transforming complex processes into seamless UIs | 6+ years experience | Front-end developer"
 };
 
 export const emailJsCreds = {

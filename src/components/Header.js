@@ -4,6 +4,7 @@ import { MdDarkMode } from "react-icons/md";
 import { RiSunFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Socials from "./Socials";
+import { personalDetails } from "../data";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -75,7 +76,7 @@ const Header = () => {
               <DrawerCloseButton style={{ top: "16px" }} />
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
-                <Text>Transforming complex processes into seamless UIs | 6+ years experience | Front-end developer</Text>
+                <Text>{ personalDetails.description }</Text>
                 <Divider mt={4} height="1px" bg="#aea8a8ff" />
                 <VStack spacing={4} pl={2} align="stretch" py={4}>
                   <Text as="a" href="#about" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("aboutme")}>
