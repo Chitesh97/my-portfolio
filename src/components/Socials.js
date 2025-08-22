@@ -1,8 +1,10 @@
 import React from "react";
-import { Box, Heading, HStack, Icon, VStack, Link } from "@chakra-ui/react";
+import { Box, Heading, HStack, Icon, VStack, Link, useColorModeValue } from "@chakra-ui/react";
 import { socials } from "../data";
 
 const Socials = () => {
+  const textColor = useColorModeValue("#64676D", "gray.200");
+
   return (
     <VStack
       pt={6}
@@ -30,7 +32,7 @@ const Socials = () => {
           <VStack
             alignItems="flex-start"
             spacing="0">
-            <Heading as="h4" size="sm" fontWeight="semibold" color="#64676D">{social.label}</Heading>
+            <Heading as="h4" size="sm" fontWeight="semibold" color={textColor}>{social.label}</Heading>
             <Link href={social.url} fontWeight="medium">{social.displayUrl}</Link>
           </VStack>
         </HStack>

@@ -74,7 +74,7 @@ const Header = () => {
               <DrawerCloseButton style={{ top: "16px" }} />
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
-                <Text>Transforming complex processes into seamless UIs | 6+ years experience | Front-end Developer</Text>
+                <Text>Transforming complex processes into seamless UIs | 6+ years experience | Front-end developer</Text>
                 <Divider mt={4} height="1px" bg="#aea8a8ff" />
                 <VStack spacing={4} pl={2} align="stretch" py={4}>
                   <Text as="a" href="#about" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("aboutme")}>
