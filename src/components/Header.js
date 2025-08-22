@@ -75,8 +75,8 @@ const Header = () => {
               <DrawerHeader>Chitesh Goyal</DrawerHeader>
               <DrawerBody>
                 <Text>Transforming complex processes into seamless UIs | 6+ years experience | Front-end Developer</Text>
-                <Divider mt={4} height="1px" bg="#7d7979ff" />
-                <VStack spacing={4} align="stretch" py={4}>
+                <Divider mt={4} height="1px" bg="#aea8a8ff" />
+                <VStack spacing={4} pl={2} align="stretch" py={4}>
                   <Text as="a" href="#about" style={{ lineHeight: "3" }} fontWeight="medium" onClick={handleClick("aboutme")}>
                     About me
                   </Text>
@@ -87,6 +87,7 @@ const Header = () => {
                     Contact me
                   </Text>
                 </VStack>
+                <Divider height="1px" bg="#aea8a8ff" />
                 <Socials />
               </DrawerBody>
             </DrawerContent>
