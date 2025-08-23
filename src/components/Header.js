@@ -64,13 +64,13 @@ const Header = () => {
             aria-label="Open menu"
             icon={<GiHamburgerMenu size={24} />}
             variant="ghost"
-            onClick={onToggle}
+            onClick={onOpen}
             display={{ base: "flex", md: "flex", lg: "none" }}
             borderColor="white"
             rounded={4}
           />
 
-          <Drawer placement="right" onClose={onToggle} isOpen={isOpen}>
+          <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton style={{ top: "16px" }} />
