@@ -8,7 +8,7 @@ import { personalDetails } from "../data";
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
 
   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
@@ -64,13 +64,13 @@ const Header = () => {
             aria-label="Open menu"
             icon={<GiHamburgerMenu size={24} />}
             variant="ghost"
-            onClick={onOpen}
+            onClick={onToggle}
             display={{ base: "flex", md: "flex", lg: "none" }}
             borderColor="white"
             rounded={4}
           />
 
-          <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
+          <Drawer placement="right" onClose={onToggle} isOpen={isOpen}>
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton style={{ top: "16px" }} />
