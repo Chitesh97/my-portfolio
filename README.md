@@ -26,7 +26,7 @@ This site highlights my **6+ years of experience** working on enterprise solutio
 
 ---
 
-## 📸 Screenshots (optional)
+## 📸 Screenshots
 > You can add some screenshots of your live site here later.
 ![Chitesh Goyal portfolio](image.png)
 
@@ -59,3 +59,17 @@ npm start
 4. Add your custom domain (like chiteshgoyal.com).
 
 Done ✅ — Vercel will automatically handle builds & deployments.
+
+---
+
+## 📬 Contact
+
+If you’d like to connect or collaborate, feel free to reach out:
+
+- Email: [dv.chitesh97@gmail.com](mailto:dv.chitesh97@gmail.com)
+- LinkedIn: [linkedin.com/in/chiteshgoyal](https://www.linkedin.com/in/cg97)
+- Portfolio: [http://my-portfolio-one-xi-29.vercel.app/](http://my-portfolio-one-xi-29.vercel.app/)
+
+---
+
+## ⭐️ Don’t forget to star this repo if you like the design!
