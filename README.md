@@ -1,13 +1,60 @@
-# Objective
-This project is developed as part of the Coursera Meta FrontEnd Developer course. This project uses
-* Formik
-* Yul
-* ChakraUI
+# 🌐 Chitesh Goyal - Portfolio Website
 
-## Preview
-<img width="1211" height="957" alt="portfolio" src="https://github.com/user-attachments/assets/4241cf0f-b6a5-4ba6-a181-ffd6395bff4e" />
+Welcome to my personal **portfolio website**, built with **ReactJS** and **Chakra UI**, to showcase my professional journey, skills, and projects.
+This site highlights my **6+ years of experience** working on enterprise solutions as well as personal projects to demonstrate my front-end development expertise.
 
-Live version of My Portfolio [Check out the live demo](https://meta-portfolio-ivory.vercel.app/)
+---
 
-## Change log
+## 🚀 Features
 
+- 🖥️ **Responsive Design** (mobile-first, accessible, dark mode supported)
+- 📂 **Project Showcase** (enterprise & personal projects with case-study style details)
+- 🧑‍💻 **About Me Section** (career highlights, technical skills, achievements)
+- 📬 **Contact Form** integrated with **EmailJS**
+- 🌙 **Dark/Light Theme Toggle**
+- ⚡ Hosted on **Vercel** with custom domain
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [ReactJS](https://react.dev/) + [Chakra UI](https://chakra-ui.com/)
+- **Forms & Validation**: Formik + Yup
+- **Email Integration**: EmailJS
+- **Deployment**: Vercel
+- **Version Control**: Git + GitHub
+
+---
+
+## 📸 Screenshots (optional)
+> You can add some screenshots of your live site here later.
+
+---
+
+## 🔧 Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Chitesh97/my-portfolio.git
+cd my-portfolio
+```
+
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
+
+### 3️⃣ Start development server
+```bash
+npm start
+```
+
+---
+
+## ⚙️ Deployment (Vercel)
+1. Push your code to GitHub.
+2. Login to Vercel
+3. Import your GitHub repo.
+4. Add your custom domain (like chiteshgoyal.com).
+
+Done ✅ — Vercel will automatically handle builds & deployments.
