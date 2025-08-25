@@ -28,7 +28,7 @@ This site highlights my **6+ years of experience** working on enterprise solutio
 
 ## 📸 Screenshots
 > You can add some screenshots of your live site here later.
-![Chitesh Goyal portfolio](image.png)
+![Chitesh Goyal's portfolio](image.png)
 
 ---
 
@@ -68,7 +68,7 @@ If you’d like to connect or collaborate, feel free to reach out:
 
 - Email: [dv.chitesh97@gmail.com](mailto:dv.chitesh97@gmail.com)
 - LinkedIn: [linkedin.com/in/chiteshgoyal](https://www.linkedin.com/in/cg97)
-- Portfolio: [http://my-portfolio-one-xi-29.vercel.app/](http://my-portfolio-one-xi-29.vercel.app/)
+- Portfolio: [https://chiteshgoyal.vercel.app/](https://chiteshgoyal.vercel.app/)
 
 ---
 
