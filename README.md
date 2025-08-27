@@ -27,7 +27,6 @@ This site highlights my **6+ years of experience** working on enterprise solutio
 ---
 
 ## 📸 Screenshots
-> You can add some screenshots of your live site here later.
 ![Chitesh Goyal's portfolio](image.png)
 
 ---
